@@ -7,8 +7,7 @@
     "test": "jest --passWithNoTests",
     "test:watch": "yarn test - --watch",
     "test:staged": "yarn test - --findRelatedTests",
-    "test:ci": "yarn test - --coverage",
-    "prepare": "husky install"
+    "test:ci": "yarn test - --coverage"
   },
   "author": "",
   "license": "ISC",
@@ -23,7 +22,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-standard": "^5.0.0",
     "git-commit-msg-linter": "^3.2.8",
-    "husky": "^7.0.1",
+    "husky": "^4.3.0",
     "jest": "^27.0.6",
     "lint-staged": "^11.1.2",
     "ts-jest": "^27.0.5",
