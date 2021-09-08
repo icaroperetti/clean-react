@@ -8,7 +8,8 @@
     "test:watch": "yarn test - --watch",
     "test:staged": "yarn test - --findRelatedTests",
     "test:ci": "yarn test - --coverage",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "postinstall": "husky install"
   },
   "author": "",
   "license": "ISC",
