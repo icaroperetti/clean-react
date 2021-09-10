@@ -6,15 +6,14 @@
   },
   "extends": [
     "standard-with-typescript",
-    "plugin:react/recommended",
+    "plugin:react/recommended"
   ],
-  "env": {},
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
   "plugins": [
     "react"
   ],
-  "parserOptions": {
-    "project": "./tsconfig-eslint.json"
-  },
   "rules": {
     "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
@@ -22,9 +21,21 @@
     "@typescript-eslint/comma-spacing": "off",
     "@typescript-eslint/return-await": "off",
     "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/method-signature-style": "off",
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-unused-vars": "off",
     "no-redeclare": "off",
     "import/export": "off",
     "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error"
+    "react/jsx-uses-vars": "error",
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": [
+          "@material-ui/*/*/*",
+          "!@material-ui/core/test-utils/*"
+        ]
+      }
+    ]
   }
 }
